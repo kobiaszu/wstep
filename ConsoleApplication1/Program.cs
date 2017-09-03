@@ -39,19 +39,25 @@ namespace ConsoleApplication1
 
             int max = sizeof(int), min = sizeof(int);
 
-            bool check = false;
+            bool check = true;
             do
             {
-                Console.WriteLine("Podaj min: ");
+                if (!check)
+                    Console.WriteLine("Nie podałeś liczby, spróbuj jeszcze raz: ");
+                else
+                    Console.WriteLine("Podaj min: ");
                 check = Int32.TryParse(Console.ReadLine(), out min);
-            } while (min == sizeof(int) || !check);
-           
+            } while ( !min.Equals(sizeof(int)) || !check);
+
             do
             {
-                Console.WriteLine("Podaj max: ");
+                if (!check)
+                    Console.WriteLine("Nie podałeś liczby, spróbuj jeszcze raz: ");
+                else
+                    Console.WriteLine("Podaj max: ");
                 check = Int32.TryParse(Console.ReadLine(), out max);
-            } while (max == sizeof(int) || (max <= min) || !check);
-        
+            } while (!max.Equals(sizeof(int)) || (max <= min) || !check);
+
             int p1 = rnd.Next(min, max);
             int p2 = rnd.Next(min, max);
 
@@ -61,7 +67,7 @@ namespace ConsoleApplication1
 
 
 
-            
+
         }
     }
 }
