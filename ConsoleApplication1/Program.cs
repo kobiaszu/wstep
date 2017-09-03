@@ -10,32 +10,8 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-
-            //int max = sizeof(int), min = sizeof(int);
-
-            //bool check = true;
-            //do
-            //{
-            //    if (!check)
-            //        Console.WriteLine("Nie podałeś liczby, spróbuj jeszcze raz: ");
-            //    else
-            //        Console.WriteLine("Podaj min: ");
-            //    check = Int32.TryParse(Console.ReadLine(), out min);
-            //} while ( min == sizeof(int) || !check);
-
-            //do
-            //{
-            //    if (!check)
-            //        Console.WriteLine("Nie podałeś liczby, spróbuj jeszcze raz: ");
-            //    else
-            //        Console.WriteLine("Podaj max: ");
-            //    check = Int32.TryParse(Console.ReadLine(), out max);
-            //} while (max == sizeof(int) || (max < min) || !check);
-
-
-            //funkcyje.AddRandomNumbers(min, max);
-
-            authorisation logowanie = new authorisation();
+   
+            Authorisation logowanie = new Authorisation();
 
             logowanie.login();
 
