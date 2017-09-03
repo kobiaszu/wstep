@@ -11,7 +11,7 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
    
-            Authorisation logowanie = new Authorisation();
+            Aauthorisation logowanie = new Aauthorisation();
 
             logowanie.login();
 

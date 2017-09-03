@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    class Authorisation
+    class Aauthorisation
     {
         private string Username;
         private string Password;
         private int MaxTries;
 
 
-        public Authorisation()
+        public Aauthorisation()
         {
             Username = "admin";
             Password = "123";
