@@ -11,8 +11,8 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
    
-            Authorisation logowanie = new Authorisation();
-
+            Authorisation logowanie = new Authorisation("karol", "321", 3);
+            Authorisation logowanie1 = new Authorisation();
             logowanie.login();
 
             Console.ReadKey();

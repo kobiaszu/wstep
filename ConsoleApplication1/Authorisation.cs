@@ -20,10 +20,17 @@ namespace ConsoleApplication1
             MaxTries = 5;
         }
 
+        public Authorisation(string user, string pass, int max)
+        {
+            Username = user;
+            Password = pass;
+            MaxTries = max;
+        }
+
         private bool compare ( string username, string password)
         {
 
-            if (username.Equals(Username) && password.Equals(Password))
+            if (username.Equals(this.Username) && password.Equals(this.Password))
             {
                 return true;
             }
